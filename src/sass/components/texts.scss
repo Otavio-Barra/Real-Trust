@@ -1,0 +1,16 @@
+.title {
+  font-family: "amsipro-ultra";
+  color: #fff;
+  font-size: clamp(4.1rem, 10vw, 6.4rem);
+  padding-right: 15rem;
+  margin-bottom: 5.6rem;
+  line-height: 100%;
+}
+
+.title-form {
+  padding-left: clamp(1rem, 2vw, 11rem);
+  font-family: "amsipro-ultra";
+  font-size: clamp(2.5rem, 3vw, 3.2rem);
+  margin-bottom: 3rem;
+  color: var(--light-blue);
+}

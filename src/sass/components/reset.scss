@@ -1,0 +1,21 @@
+.mobile,
+.img-mobile,
+#btn-menu {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "amsipro-bold";
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.container {
+  width: min(90vw, 1440px);
+  margin: 0 auto;
+}

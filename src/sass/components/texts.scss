@@ -1,7 +1,7 @@
 .title {
   font-family: "amsipro-ultra";
   color: #fff;
-  font-size: clamp(4.1rem, 10vw, 6.4rem);
+  font-size: clamp(4.1rem, 9vw, 6.4rem);
   padding-right: 15rem;
   margin-bottom: 5.6rem;
   line-height: 100%;
@@ -10,7 +10,17 @@
 .title-form {
   padding-left: clamp(1rem, 2vw, 11rem);
   font-family: "amsipro-ultra";
-  font-size: clamp(2.5rem, 3vw, 3.2rem);
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
   margin-bottom: 3rem;
   color: var(--light-blue);
+}
+
+.title.text-blue {
+  color: var(--very-light-blue);
+}
+.text-large {
+  font-size: clamp(1.8rem, 2vw, 3.2rem);
+  width: 100%;
+  padding-left: clamp(0rem, 1vw, 10rem);
+  color: #fff;
 }

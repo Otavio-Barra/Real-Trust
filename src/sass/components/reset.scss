@@ -16,6 +16,8 @@ html {
   scroll-behavior: smooth;
 }
 .container {
+  display: flex;
+  align-items: center;
   width: min(90vw, 1440px);
   margin: 0 auto;
 }

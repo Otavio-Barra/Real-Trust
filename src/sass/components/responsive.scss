@@ -1,7 +1,13 @@
 @media (max-width: 920px) {
   //texts
   .title {
-    padding-right: 0;
+    text-align: center;
+  }
+  .title.padding-mobile0 {
+    padding: 0;
+  }
+
+  .texts-section {
     text-align: center;
   }
   //
@@ -34,8 +40,6 @@
   //form section
   .form-section {
     .container {
-      // flex-direction: column;
-      // align-items: center;
       padding: 4.6rem 0;
 
       .content {
@@ -50,9 +54,14 @@
   }
   //
 
-  .texts-section {
-    text-align: center;
+  //galery
+
+  .projects.container {
+    .galery {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
+  //
 
   //menu-mobile
   .mobile {
@@ -123,5 +132,12 @@
   }
   #menu.active-menu {
     transform: translateX(0);
+  }
+}
+@media (max-width: 520px) {
+  .projects.container {
+    .galery {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

@@ -2,15 +2,26 @@
   font-family: "amsipro-ultra";
   color: #fff;
   font-size: clamp(3.9rem, 9vw, 6.4rem);
-  padding-right: 15rem;
-  margin-bottom: 5.6rem;
   line-height: 100%;
+  margin-bottom: 5.6rem;
 }
-.choose-us.container {
+.texts-section,
+.form-section {
+  .title {
+    padding-right: 15rem;
+  }
+  .text-large {
+    padding-left: clamp(0rem, 1vw, 10rem);
+  }
+}
+.choose-us.container,
+.projects {
   .title {
     color: var(--blue);
-    padding: 0;
   }
+}
+.title.text-blue {
+  color: var(--very-light-blue);
 }
 
 .title-form {
@@ -21,13 +32,9 @@
   color: var(--light-blue);
 }
 
-.title.text-blue {
-  color: var(--very-light-blue);
-}
 .text-large {
-  font-size: clamp(1.8rem, 2vw, 3.2rem);
+  font-size: clamp(1.7rem, 2vw, 3rem);
   width: 100%;
-  padding-left: clamp(0rem, 1vw, 10rem);
   color: #fff;
 }
 

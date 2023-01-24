@@ -12,6 +12,7 @@
   --gray: #9e9e9e;
   --very-light-blue: #7bcfff;
   --border-card: #cac4d0;
+  --text-gray: #9b9b9b;
 }
 
 .form-section {
@@ -62,6 +63,36 @@
       .content-card {
         padding: 2.5rem;
       }
+    }
+  }
+}
+.about-us {
+  background-color: var(--blue);
+  padding: 4.8rem 0;
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.projects.container {
+  flex-direction: column;
+  padding: 10rem 0;
+  .text-projects {
+    font-size: clamp(1.7rem, 2vw, 2.4rem);
+    text-align: center;
+    color: var(--text-gray);
+    margin-bottom: 5rem;
+  }
+
+  .galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .img-projects {
+      border-radius: 2rem;
+      max-width: 100%;
     }
   }
 }

@@ -1,5 +1,4 @@
 .btn-blue {
-  background-color: var(--blue);
   color: #fff;
   border: none;
   font-size: 1.6rem;
@@ -11,4 +10,19 @@
 }
 .btn-blue:hover {
   background-color: var(--light-blue);
+}
+
+.btn {
+  color: var(--blue);
+  border: none;
+  font-size: 1.6rem;
+  padding: 2.5rem 5rem;
+  border-radius: 10rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 4rem;
+}
+.btn:hover {
+  background-color: var(--border-card);
 }

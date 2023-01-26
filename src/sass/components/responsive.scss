@@ -134,6 +134,30 @@
     transform: translateX(0);
   }
 }
+@media (max-width: 590px) {
+  .testimonials {
+    .carrosel-wapper {
+      .arrow.arrow-left {
+        transform: translate(-325%, -50%);
+      }
+      .arrow.arrow-right {
+        transform: translate(225%, -50%);
+      }
+
+      .carrosel {
+        .card-depoiment {
+          width: 26rem;
+        }
+      }
+      .card-depoiment.card-left {
+        transform: translate(-100%, -50%);
+      }
+      .card-depoiment.card-right {
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
 @media (max-width: 520px) {
   .projects.container {
     .galery {

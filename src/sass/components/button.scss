@@ -26,3 +26,16 @@
 .btn:hover {
   background-color: var(--border-card);
 }
+.btn-white {
+  color: var(--blue);
+  border: none;
+  font-size: 1.6rem;
+  padding: 1rem 3.6rem;
+  border-radius: 2.1rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-white:hover {
+  background-color: var(--border-card);
+}

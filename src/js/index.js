@@ -45,3 +45,4 @@ const gotoNum = (number) => {
   cards[prev].classList.add("card-left");
   cards[next].classList.add("card-right");
 };
+gotoNext();

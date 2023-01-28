@@ -1,9 +1,13 @@
+@mixin text-style($size, $color, $margin) {
+  font-size: $size;
+  color: $color;
+  margin-bottom: $margin;
+}
+
 .title {
+  @include text-style(clamp(3.9rem, 9vw, 6.4rem), #fff, 5.6rem);
   font-family: "amsipro-ultra";
-  color: #fff;
-  font-size: clamp(3.9rem, 9vw, 6.4rem);
   line-height: 100%;
-  margin-bottom: 5.6rem;
 }
 .texts-section,
 .form-section {
@@ -20,31 +24,50 @@
     color: var(--blue);
   }
 }
-.title.text-blue {
+.text-blue {
   color: var(--very-light-blue);
 }
 
 .title-form {
+  @include text-style(clamp(2.2rem, 4vw, 3.2rem), var(--light-blue), 3rem);
   padding-left: clamp(1rem, 2vw, 11rem);
   font-family: "amsipro-ultra";
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  margin-bottom: 3rem;
-  color: var(--light-blue);
 }
 
 .text-large {
-  font-size: clamp(1.7rem, 2vw, 3rem);
+  @include text-style(clamp(1.7rem, 2vw, 3rem), #fff, 0);
   width: 100%;
-  color: #fff;
 }
 
 .title-card {
-  font-size: 2.4rem;
-  color: var(--blue);
+  @include text-style(2.4rem, var(--blue), 2rem);
   font-family: "amsipro-ultra";
-  margin-bottom: 2rem;
 }
 .text-card {
-  font-size: 2rem;
-  color: #49454f;
+  @include text-style(2rem, #49454f, 0);
+}
+
+.sub-text {
+  @include text-style(clamp(1.7rem, 2vw, 2.4rem), var(--text-gray), 5rem);
+  text-align: center;
+}
+
+.banner-text {
+  @include text-style(clamp(1.7rem, 2vw, 2.6rem), var(--blue), 0);
+}
+
+.texts-card {
+  .text-depoiment {
+    @include text-style(1.2rem, var(--text-gray), 0);
+    font-family: "amsipro-light";
+  }
+
+  .name {
+    @include text-style(2rem, var(--blue), 1rem);
+    font-family: "amsipro-ultra";
+  }
+  .text-depoiment {
+    @include text-style(1rem, var(--text-gray), 0);
+    font-family: "amsipro-light";
+  }
 }

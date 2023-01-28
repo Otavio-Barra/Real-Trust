@@ -133,7 +133,23 @@
   #menu.active-menu {
     transform: translateX(0);
   }
+
+  footer {
+    .container {
+      flex-direction: column;
+      row-gap: 3rem;
+      div {
+        .logo {
+          width: 100%;
+        }
+      }
+      .nav-pages {
+        flex-direction: column;
+      }
+    }
+  }
 }
+
 @media (max-width: 590px) {
   .testimonials {
     .carrosel-wapper {
@@ -162,6 +178,13 @@
   .projects.container {
     .galery {
       grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .banner-section {
+    .banner {
+      flex-direction: column;
+      text-align: center;
+      padding: 2.6rem;
     }
   }
 }

@@ -80,13 +80,6 @@
   flex-direction: column;
   padding: 10rem 0;
 
-  .text-projects {
-    font-size: clamp(1.7rem, 2vw, 2.4rem);
-    text-align: center;
-    color: var(--text-gray);
-    margin-bottom: 5rem;
-  }
-
   .galery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -151,7 +144,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: all 1s ease-in-out;
+        transition: all 1.5s ease;
         opacity: 0;
         display: flex;
         flex-direction: column;
@@ -166,18 +159,6 @@
             width: 16rem;
           }
         }
-
-        .texts-card .name {
-          font-size: 2rem;
-          font-family: "amsipro-ultra";
-          color: var(--blue);
-          margin-bottom: 1rem;
-        }
-        .texts-card .text-depoiment {
-          font-size: 1rem;
-          color: var(--text-gray);
-          font-family: "amsipro-light";
-        }
       }
     }
     .card-depoiment.card-select {
@@ -187,12 +168,6 @@
       -moz-box-shadow: 3px 3px 14.5px -1px #000000;
       box-shadow: 3px 3px 14.5px -1px #000000;
       opacity: 1;
-
-      .texts-card .text-depoiment {
-        font-size: 1.2rem;
-        color: var(--text-gray);
-        font-family: "amsipro-light";
-      }
     }
     .card-depoiment.card-left {
       filter: blur(0.2rem);
@@ -203,6 +178,66 @@
       filter: blur(0.2rem);
       transform: translate(25%, -50%);
       opacity: 1;
+    }
+  }
+}
+
+.banner-section {
+  padding: 7.4rem 0;
+  display: flex;
+  justify-content: center;
+
+  .banner {
+    max-width: 78.4rem;
+    border: 3px solid var(--blue);
+    box-shadow: 0px 4px 47px 7px rgba(0, 0, 0, 0.15);
+    border-radius: 2.6rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 2.6rem 5.7rem;
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  background-color: var(--blue);
+  padding: 3rem 0;
+  .container {
+    justify-content: space-between;
+
+    .nav-pages {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #fff;
+        transition: 0.3s;
+      }
+      a:hover {
+        color: var(--light-blue);
+      }
+    }
+
+    .social-media {
+      display: flex;
+      gap: 10px;
+
+      a {
+        i {
+          font-size: 3rem;
+          color: #fff;
+          opacity: 0.7;
+          transition: all 0.5s;
+        }
+        i:hover {
+          opacity: 1;
+        }
+      }
     }
   }
 }
